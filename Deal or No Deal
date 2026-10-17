@@ -1,0 +1,90 @@
+import numpy
+
+print("Welcome to Deal or No Deal:")
+
+print()
+numbers = [1, 2, 3]
+print(numbers)
+print()
+numbers = [4, 5, 6]
+print(numbers)
+print()
+numbers = [7, 8, 9]
+print(numbers)
+
+while True:
+    numbers = input("Select a number:")
+    numbers = int(numbers)
+    print("You selected:", numbers)
+    
+
+    if numbers == 1:
+        dollar_amount = 20
+        print(f"${dollar_amount}")
+        print("You lost $20!!!")
+        win = [0.01,1,50]
+        x = numpy.mean(win)
+        print("You win", int(x))
+        while True:
+            option = input("Deal or No Deal:")
+            option = str(option)
+            print("You choose:", option)
+        
+            if option == "Deal":
+                print("You won", int(x))
+                break
+            else:
+                break
+        
+    if numbers == 2:
+        dollar_amount = 0.01
+        print(f"${dollar_amount}")
+        print("You lost $0.01!!!")
+        win = [20,1,50]
+        x = numpy.mean(win)
+        print("You win", int(x))
+        while True:
+            option = input("Deal or No Deal:")
+            option = str(option)
+            print("You choose:", option)
+        
+            if option == "Deal":
+                print("You won", int(x))
+                break
+            else:
+                break
+    elif numbers == 3:
+        dollar_amount = 50
+        print(f"${dollar_amount}")
+        print("You lost $50!!!")
+        win = [20,1,0.01]
+        x = numpy.mean(win)
+        print("You win", int(x))
+        while True:
+            option = input("Deal or No Deal:")
+            option = str(option)
+            print("You choose:", option)
+        
+            if option == "Deal":
+                print("You won", int(x))
+                break
+            else:
+                break
+        
+    elif numbers == 4:
+        dollar_amount = 1
+        print(f"${dollar_amount}")
+        print("You lost $1!!!")
+        win = [20,0.01,50]
+        x = numpy.mean(win)
+        print("You win", int(x))
+        while True:
+            option = input("Deal or No Deal:")
+            option = str(option)
+            print("You choose:", option)
+        
+            if option == "Deal":
+                print("You won", int(x))
+                break
+            else:
+                break
